@@ -1,0 +1,552 @@
+\documentclass[12pt]{article}
+\usepackage{lingmacros}
+\usepackage{enumitem}
+\usepackage{tree-dvips}
+\usepackage{fullwidth}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{xparse}
+\usepackage{hyperref}
+\usepackage{MnSymbol}
+\lstset{language=SQL,,keywordstyle=\color{orange} \bfseries} 
+\newcolumntype{P}[1]{>{\hspace{0pt}}p{#1}}
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+			\includegraphics[width=\textwidth]{dais/logo}\\
+			\vspace*{1cm}
+			\huge\textbf{Dokumentace}
+			\Large
+			
+			\vspace{0.5cm}
+			Farní web - Farabuk
+			
+			\vspace{1.5cm}
+		\end{center}
+			\vspace{6cm}
+			\normalsize
+			Jméno:\quad \quad \quad \quad \quad \quad Jindřich Kvita (Kvi0029)\\
+			Jméno vyučujícího:\quad	Ing. Petr Lukáš
+			\title{Farní web - Farabuk}
+			\author{Jindřich Kvita}
+			\date{\today }
+			
+			\vfill
+		
+	\end{titlepage}
+
+	\begin{enumerate}
+		\chapter{Specifikace zadní}
+		\begin{enumerate}[label*=\arabic*.]
+			\item {Proč}\\
+			Jedna ze základních podmínek získání Evropského grantu na opravu kostela je mít vlastní webové stránky, které by následně informovaly o dění v obci. Naneštěstí tyto stránky mnohdy spravuje člověk technicky málo zdatný a je tedy téměř nemožné, aby dokumenty psal přímo v kódu (nehledě na nemožnost budoucí správy). Je tedy nutné stránky obohatit o redakční systém a s ním spojenou databázi, do které se všechny příspěvky, dokumenty, osoby, atd. budou ukládat.
+			\item {Kdo}
+			\begin{itemize}
+				\item Kněz
+				\begin{itemize}
+					\item Může vytvářet a editovat dokumenty
+					\item Může vytvářet alba, editovat je a přidávat do nich fotografie
+					\item Může mazat nevhodné komentáře
+					\item Může jiným uživatelům přidávat práva
+					\item Může číst dokumenty a prohlížet fotografie
+					\item Může komentovat fotky a dokumenty dané obce, ve které žije
+				\end{itemize}
+			\item Fotograf
+				\begin{itemize}
+					\item Může vytvářet alba, editovat je a přidávat do nich fotografie
+					\item Může číst dokumenty a prohlížet fotografie
+					\item Může komentovat fotky a dokumenty dané obce, ve které žije
+				\end{itemize}
+			\item Uživatel 
+				\begin{itemize}
+					\item Může číst dokumenty a prohlížet fotografie
+					\item Může komentovat fotky a dokumenty dané obce, ve které žije
+				\end{itemize}
+			\item Zabanovaný uživatel
+				\begin{itemize}
+					\item Může číst dokumenty a prohlížet fotografie
+					\item Smí psát komentáře, ty se však neuloží
+				\end{itemize}	
+			\item Smazaný uživatel
+				\begin{itemize}
+					\item Může číst dokumenty a prohlížet fotografie
+				\end{itemize}		
+			\end{itemize}
+		\item Vstupy\\
+		Systém bude spravovat několik obcí, které budou sdílet jednu databázi. Pro každou obec budeme ukládat jednotlivé dokumenty, které se budou dělit do určitých rubrik. Dokumenty můžou obsahovat fotografii. Dále může být dokument označen jako veřejné oznámení, které bude vyvěšené po určitou dobu (2 data: datum vyvěšení a datum stažení). Budeme sledovat historii úprav obsahu dokumentu. Dále zde budeme ukládat fotografie, které budou rozděleny do jednotlivých alb. Samozřejmě se počítá s tím, že uživatelé budou chtít vyjádřit svůj názor k danému dokumentu, nebo fotografii. To však bude umožněno uživateli, jen když bude přihlášen jako obyvatel dané obce. U registrace uživatele budeme chtít vědět obec, ze které uživatel pochází, jeho jméno a datum narození.
+		\item Výstupy 
+			\begin{itemize}
+				\item Uživatel rozklikne rubriku "informace" a zobrazí se mu všechny dokumenty, které patří do rubriky dané obce a dané rubriky seřazené podle data tak, aby nejvýš byl nejnovější dokument
+				\item Při registraci uživatel zadá svou přezdívku, heslo, e-mail, věk, datum narození. Systém ověří unikátnost e-mailu a věk, pokud bude věk aspoň 13 let a email ještě nebude uložen, pak bude
+				uživatel zaregistrován
+			\end{itemize}
+		\item Funkce \\
+			Hlídání slušných komentářů, registrace uživatel, přihlášení uživatel, změna práv uživatele, logování změn dokumentů, vypsání dokumentu, možnost vytvoření dokumentu, vytvoření alba, přidání fotek do alba
+		\end{enumerate}
+	\newpage
+	\item Datová analýza
+		\begin{enumerate}[label*=\arabic*.]
+			\item Relační model \\ \\
+			\begin{center}
+				\includegraphics[width=\textwidth]{dais/relacni.png}
+			\end{center}
+			\item Lineární zápis entitních typů \\
+				Vysvětlivky: \textbf{Tabulka,} \color{red} Primární klíč\color{black},   \textit{Nepovinný parametr}\\ 
+				
+				\textbf{obec} (\textcolor{red}{obec\_id}, nazev)\\
+				\textbf{album} (\textcolor{red}{album\_id}, nazev)\\
+				\textbf{foto} (\textcolor{red}{foto\_id}, nazev, datum, \textit{popis})\\
+				\textbf{uzivatel} (\textcolor{red}{uzivatel\_id}, nick, heslo, email, datum\_narozeni, ban)\\
+				\textbf{dokument} (\textcolor{red}{dokument\_id}, nadpis, obsah, datum, \textit{obrazek})\\
+				\textbf{rubrika} (\textcolor{red}{rubrika\_id}, nazev)\\
+				\textbf{zmena\_dokument} (\textcolor{red}{zmena\_dokument\_id}, obsah, datum)\\
+				\textbf{verejne\_oznameni} (datum\_vyves, datum\_stazeni)\\
+				\textbf{komentar} (\textcolor{red}{komentar\_id}, obsah)\\ \\
+				ma\_alba (obec, album)\\
+				obsahuje\_fotogafie (album, foto)\\
+				je\_obyvatel (obec, uzivatel)\\
+				obsahuje\_dokumenty (obec, dokument)\\
+				je\_zarazen (dokument, rubrika)\\
+				je\_komentovan (dokument, komentar)\\
+				je\_komentovana (fotografie, komentar)\\
+				je\_komentujici (uzivatel, komentar)\\
+				je\_zmemen (dokument, zmena\_dokument)\\
+				je\_oznamenim (dokument, verejne\_oznameni)\\
+		\end{enumerate} %x.x
+		\newpage
+		\item Datový model
+		\begin{enumerate}[label*=\arabic*.]
+			\item Popis jednotlivých tabulek\\
+			
+		\begin{table}[htp]
+				\caption{obec}
+				\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+					\hline
+					\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+					\hline
+					obec\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+					\hline
+					jmeno&Varchar&50&&ne&&&jméno obce\\
+					\hline					
+				\end{tabularx}
+			\end{table}
+
+		\begin{table}[htp]
+			\caption{album}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline
+				album\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				nazev&Varchar&50&&Ne&&&Jméno alba\\
+				\hline
+				obec\_obec\_id&Integer&&Cizí&Ne&Ano&&\\
+				\hline
+			\end{tabularx}
+		\end{table}
+	
+		\begin{table}[htp]
+			\caption{foto}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline
+				foto\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				nazev&Varchar&69&&Ne&&&Název fotky\\
+				\hline
+				datum&Date&&&Ne&&&Datum nahrání\\
+				\hline
+				popis&Varchar&100&&Ano&&&Popis obrázku\\
+				\hline
+				album\_album\_id&Integer&&Cizí&Ne&Ano&&\\
+				\hline				
+			\end{tabularx}
+		\end{table}
+
+		\begin{table}[htp]
+			\caption{uzivatel}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline
+				uzivatel\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				nick&Varchar&30&&Ne&&&Přezdívka uživatele\\
+				\hline
+				heslo&Varchar&70&&Ne&&&hashované heslo\\
+				\hline
+				e-mail&Varchar&60&&Ne&&1\big) 2\big)& přihlašovací e-mail uživatele\\
+				\hline
+				datum\_narozeni&Date&&&Ne&&3\big)&datum narození uživatele\\
+				\hline
+				ban&Integer&&&Ne&&&todo\\
+				\hline
+				obec\_obec\_id&Integer&&Cizí&Ne&Ano&&\\
+				\hline
+			\end{tabularx}
+		\end{table}
+
+		\begin{table}[htp]
+			\caption{dokument}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline
+				dokument\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				nadpis&Varchar&30&&Ne&&&Nadpis článku\\
+				\hline
+				obsah&Text&&&Ne&&&Tělo dokumentu\\
+				\hline
+				datum&Date&&&Ne&&&Datum vytvoření článku\\
+				\hline
+				obrazek&Varchar&69&&Ano&&&Obrázek k textu\\
+				\hline
+				rubrika\_rubrika\_id&Integer&&Cizí&Ne&Ano&&\\
+				\hline
+			\end{tabularx}
+		\end{table}
+
+		\begin{table}[htp]
+			\caption{rubrika}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline
+				rubrika\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				nazev&Varchar&30&&Ne&&&Název rubriky\\
+				\hline						
+			\end{tabularx}
+		\end{table}
+
+		\begin{table}[htp]
+			\caption{zmena\_dokument}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline
+				zmena\_dokument\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				obsah&Text&&&Ne&&&Původní tělo dokumentu\\
+				\hline
+				datum&Date&&&Ne&&&Datum změny\\
+				\hline
+				dokument\_dokument\_id&Integer&&Cizí&Ne&Ano&&\\
+				\hline
+				
+
+			\end{tabularx}
+		\end{table}
+
+		\begin{table}[htp]
+			\caption{verejne\_oznameni}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline	
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline			
+				verejne\_oznameni\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				datum\_vyves&Date&&&Ne&&&Datum vyvěšení příspěvku\\
+				\hline
+				datum\_staz&Date&&&Ne&&4\big)&Datum stažení příspěvku\\
+				\hline
+				dokument\_dokument\_id&Integer&&Cizí&Ne&Ano&&\\
+				\hline
+
+			\end{tabularx}
+		\end{table}	
+
+		\begin{table}[htp]
+			\caption{komentar}
+			\begin{tabularx}{1.25\textwidth}{|P{3.5cm}|p{1.6cm}|p{1.2cm}|p{1.6cm}|p{1cm}|p{1.2cm}|p{1cm}|X|}
+				\hline	
+				\textbf{Název}& \textbf{Dat.typ} & \textbf{Délka} & \textbf{Klíč} & \textbf{Null}&\textbf{Index}& \textbf{IO}& \textbf{Význam} \\
+				\hline	
+				komentar\_id&Integer&&Primární&Ne&Ano&&Identifikátor\\
+				\hline
+				obsah&Text&&&Ne&&&Tělo komentáře\\
+				\hline
+				foto\_foto\_id&Integer&&Cizí&Ano&Ano&5\big)&\\
+				\hline
+				dokument\_dokument\_id&Integer&&Cizí&Ano&Ano&6\big)&\\
+				\hline
+				uzivatel\_uzivatel\_id&Integer&&Cizí&Ne&Ano&7\big)&\\
+				\hline
+			\end{tabularx}
+		\end{table}
+		\newpage
+		\item Seznam integritních omezení
+			\begin{enumerate}[label=\arabic*)]
+				\item E-mail musí obsahovat "@" a "."
+				\item E-mail musí být unikátní
+				\item Věk musí být alespoň 13 let
+				\item Datum vyvěšení musí být nižší, než datum stažení
+				\item Komentář má FK foto\_foto\_id, nebo dokument\_dokument\_id, ne oba
+				\item Komentář má FK dokument\_dokument\_id, nebo foto\_foto\_id, ne oba
+				\item Uživatel smí komentovat jen dokumenty a fotografie, které patří k jeho obci
+				
+			\end{enumerate}%x)
+	
+		\end{enumerate}%x.x
+	\item Stavová analýza
+		\begin{itemize}
+			\item uživatel nabývá stavů: 
+			\begin{itemize} 
+				\item Admin - smí provádět všechny operace (ban=255)
+				\item Kněz - smí přidávat fotografie, články, komentáře a upravovat je (ban =127)
+				\item Fotograf - smí přidávat a upravovat fotografie (ban =63)
+				\item Uživatel - smí psát komentáře (ban = 0)
+				\item Smazaný uživatel - nezobrazuje se a nelze jej přihlásit \newline(ban=-1)
+				\item Zabanovaný uživatel - smí psát komentáře, avšak se neuloží do databáze (ban=3)
+			\end{itemize}% -
+			\item veřejné oznámení nabývá stavů: 
+			\begin{itemize}
+				\item čeká na zveřejnění (datum\_vyves $>$  aktuální datum)
+				\item zveřejněno (datum\_vyves $>=$ aktuální datum AND aktuální datum $<=$ datum\_staz)
+				\item staženo (datum\_staz $<$ aktuální datum)
+			\end{itemize}
+		\end{itemize} %*
+	\item Funkční analýza
+		\begin{enumerate}[label*=\arabic*.]
+			\item Seznam funkcí 
+			\begin{enumerate}[label*=\arabic*.]
+				\item Uživatel 
+				\begin{enumerate}[label*=\arabic*.]
+					\item \hypertarget{5.1.1.1}{Registrace uživatele} \\
+					Zodpovědnost: Uživatel
+					\item Vypsání uživatelů\\
+					Zodpovědnost: Admin, Kněz
+					\item Změna stavu práv uživatele\\
+					Zodpovědnost: Admin, Kněz
+					\item Zabanování uživatele\\
+					Zodpovědnost: Admin, kněz
+					\item Smazání uživatele \\
+					Tabulky: uzivatel, komentare
+					Zodpovědnost: Uživatel\\
+					Po smazání uživatele se skryjí komentáře daného uživatele
+					\item \hypertarget{5.1.1.6}{Registrace uživatele}\\
+					Zodpovědnost: -  					
+				\end{enumerate}
+				\item Dokument
+				\begin{enumerate}[label*=\arabic*.]
+					\item Vytvoření dokumentu\\
+					Zodpovědnost: Kněz
+					\item \hypertarget{5.1.2.2}{Editace dokumentu} \\
+					Zodpovědnost: Kněz
+					\item \hypertarget{zobraz}{Zobrazení dokumentu} \\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel, Smazaný uživatel
+					\item Komentování dokumentu \\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel\\
+					Uživatel smí komentovat jen dokument stejné obce, ve které je registrován
+					\item Přidání dokumentu do rubriky\\
+					Zodpovědnost: Admin, Kněz
+				\end{enumerate}	
+				\item Obec 
+				\begin{enumerate}[label*=\arabic*.]
+					\item Přidání obce\\
+					Zodpovědnost: Admin
+					\item Smazání obce \\
+					Zodpovědnost: Admin\\
+					Po smazání se skryjí všechny články a alba dané obce					
+					\item \hypertarget{5.1.3.3}{Vypsání obcí zapojených do projektu} \\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel				
+				\end{enumerate}	
+				\item Album
+				\begin{enumerate}[label*=\arabic*.]
+					\item Přidání alba\\
+					Zodpovědnost: Admin, Kněz, Fotograf
+					\item Zobrazení alb\\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel
+					\item Skrytí alba\\
+					Zodpovědnost: Admin\\
+					Po skrytí alba se skryjí i fotografii v albu zařazené 
+				\end{enumerate}
+				\item Fotografie 
+				\begin{enumerate}[label*=\arabic*.]
+					\item Přidání fotografií\\
+					Zodpovědnost: Kněz, Fotograf
+					\item \hypertarget{fotky}{Zobrazení fotografií daného alba}\\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel, Zabanovaný uživatel
+					\item Skrytí fotografií\\
+					Zodpovědnost: Admin, Kněz, Fotograf
+					\item \hypertarget{5.1.5.4}{Přidání komentáře}\\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel
+				\end{enumerate}
+				\item Komentář
+				\begin{enumerate}[label*=\arabic*.]
+					\item Mazání komentářů\\
+					Zodpovědnost: Admin, Kněz
+					\item Zobrazení komentářů \\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel, Zabanovaný uživatel	
+					\item \hypertarget{dog}{Automatické hlídání slušných komentářů}\\
+					Zodpovědnost: Admin
+				\end{enumerate}
+				\item Rubrika 
+				\begin{enumerate}[label*=\arabic*.]
+					\item \hypertarget{5.1.7.1}{Přidávání rubrik} \\
+					Zodpovědnost: Admin
+					\item \hypertarget{5.1.7.2}{Vypsání všech dokumentů v dané rubrice}\\
+					Zodpovědnost: Admin, Kněz, Fotograf, uživatel, Zabanovaný uživatel
+				\end{enumerate}	
+				\item Veřejné oznámení
+				\begin{enumerate}[label*=\arabic*.]
+					\item \hypertarget{verejne}{Zobrazení všech aktuálních veřejných oznámení dané obce}\\
+					Zodpovědnost: Admin, Kněz, Fotograf, Uživatel, 
+				\end{enumerate}
+			\end{enumerate}
+		\item Detailní popis funkcí
+			\begin{enumerate}[label*=\arabic*.]
+				\item \hyperlink{zobraz}{Zobrazení dokumentů v dané rubrice} \\
+				Jedná se o funkci, která vrátí všechny články, které patří do dané rubriky. Vrátí se datum, nadpis, obsah a odkaz na obrázek.
+				Vstupním parametrem funkce je \verb|$p_nazev_rubriky| a výstupní proměnná \verb|$pole_dokumentu| které bude 
+				\begin{enumerate}[label=\arabic*.]
+					\item vytvoří se kurzor \verb|$c_dokumenty|
+					\item do \verb|$c_dokumenty| se přiřadí veškeré výskyty dané rubriky z databáze 
+					\begin{lstlisting}
+cursor $c_dokumenty is
+SELECT *
+FROM dokument d 
+JOIN rubrika r ON r.rubrika_id=d.rubrika_rubrika_id
+WHERE $p_nazev_rubriky = r.nazev 
+ORDER BY dokument_id DESC;
+					\end{lstlisting}
+					\item do proměnné \verb|$i| se přiřadí číslo 1
+					\item v cyklu pro všechny \verb|$c_dokumenty| se provede:
+					\begin{itemize}
+						\item přiřadí se do \verb|$pole_dokumentu| na pozici \verb|$i| veškeré informace z kurzoru pro daný prvek
+						\item inkrementuje se \verb|$i| o 1
+					\end{itemize}
+				\end{enumerate}
+			
+				\item \hyperlink{dog}{Automatický hlídač slušných komentářů} \\
+				Vstup: \verb|$p_obsah|, \verb|$p_foto_foto_id|,  \verb|$p_dokument_dokument_id|,  \verb|$p_uzivatel_uzivatel_id|\\
+				Jedná se o proceduru, která zkontroluje poměr velkých písmen se zbytkem textu, zároveň spočítá počet vykřičníků v textu, pokud se jich v jednom komentáři nachází více, než předem stanovené množství, zvedne se u daného uživatele ban+1. Při dosáhnutí ban=3 se přestanou příspěvky uživatele zobrazovat.\\
+				
+				\begin{enumerate}[label=\arabic*)]
+					\item proměnné \verb|$velkaPismena|, \verb|$delkaKometare| a \verb|$pocetVykriniku| se nastaví na 0
+					\item do proměnné \verb|$delkaKometare| se uloží délka řetězce 
+					\item v cyklu, který projde celý komentář po znacích se provedou tyto kroky: 
+					\begin{itemize}
+						\item pro daný znak se zkontroluje, jestli se jedná o velké písmeno, pokud ano, proměnná \verb|$velkaPismena| se inkrementuje o 1
+						\item pokud se jedná o vykřičník, proměnná \verb|$pocetVykriniku| se inkrementuje o 1 
+					\end{itemize}
+					\item vydělí se proměnná \verb|$velkaPismena| proměnnou \verb|$delkaKometare| a výsledek se uloží do proměnné \verb|$vysledek|
+					\item pokud je \verb|$vysledek| větší, než 0.05, nebo pokud je \verb|$pocetVykriniku| větší než 7, je uživatelovo číslo ban zvednuto o jedna
+					\begin{lstlisting}
+UPDATE uzivatel SET uzivatel.ban=ban+1 
+	WHERE uzivatel_id=p_uzivatel_id;
+					\end{lstlisting}
+					\item pokud je po updatu čísla ban uživatelova hodnota tohoto čísla menší než 3, pak je komentář zapsán do databáze 
+					\begin{lstlisting}
+INSERT INTO komentar(
+	obsah, 
+	foto_foto_id, 
+	dokument_dokument_id, 
+	uzivatel_uzivatel_id) 
+VALUES(
+	$p_obsah, 
+	$p_foto_foto_id, 
+	$p_dokument_dokument_id, 
+	$p_uzivatel_uzivatel_id);
+					\end{lstlisting}
+
+				\end{enumerate}
+				\item \hyperlink{verejne}{Vylistování všech aktuálních veřejných oznámení dané obce}\\
+				Vstup: \verb|$p_jmeno_obce|
+				\begin{lstlisting}
+SELECT * FROM obec o 
+JOIN dokument d 
+	ON o.obec_id=d.obec_obec_id 
+JOIN verejne_oznameni v 
+	ON d.dokument_id=v.dokument_dokument_id
+WHERE obec=$p_jmeno_obce 
+	AND datum_vyves > CURRENT_TIMESTAMP
+	AND datum_staz <= CURRENT_TIMESTAMP
+ORDER BY (datum_staz) DESC;
+				\end{lstlisting}
+			\item \hyperlink{fotky}{Zobrazení všech fotek daného alba}\\
+			Vstup: \verb|$p_jmeno_alba|, výstupní proměnná \verb|$pole_fotek|\\
+			Procedura vylistuje veškeré fotografie, jejich datum nahrání a popis.
+			\begin{enumerate}[label=\arabic*.]
+				\item vytvoří se kurzor \verb|$c_fotky|
+				\item do \verb|$c_fotky| se přiřadí veškeré fotografie daného alba 
+				\begin{lstlisting}
+cursor $c_fotky is 
+SELECT * 
+FROM fotografie f 
+JOIN album a on a.album_id=f.album_album_id 
+WHERE a.nazev=$p_jmeno_alba
+ORDER BY f.foto_id ASC;
+				\end{lstlisting}
+				\item do proměnné \verb|$i| se přiřadí číslo 1
+				\item v cyklu pro všechny \verb|$c_fotky| se provede:
+					\begin{itemize}
+						\item přiřadí se do \verb|$pole_fotek| na pozici \verb|$i|
+						\item proměnná \verb|$i| se inkrementuje o 1
+					\end{itemize}
+			\end{enumerate}
+			\item \hyperlink{5.1.2.2}{Hlídání změn dokumentu} \\
+			Vstupy: \verb|$nadpis|, \verb|$obsah|, \verb|$dokument_id|
+			Jedná se o trigger, který hlídá změnu obsahu dokumentu, pokud se provede změna, stará verze se zapíše do zmena\_dokument spolu s časem změny
+			\begin{enumerate}[label=\arabic*.]
+				\item do zmena\_dokument se zapíše původní záznam 
+				\begin{lstlisting}
+INSERT INTO verejne_oznameni(
+	obsah, 
+	datum, 
+	dokument_dokument_id) 
+VALUES (
+	:OLD.$obsah, 
+	aktualni_timestamp, 
+	$dokument_id);
+				\end{lstlisting} 
+				\item upravený záznam se zapíše do dokument
+				\begin{lstlisting}
+UPDATE dokumet SET obsah=$obsah 
+WHERE dokument_id=$dokument_id;
+				\end{lstlisting}
+				\item pokud vše proběhne bez problémů, pak commit, v opačném případě rollbackˇ
+			\end{enumerate}
+				
+			\end{enumerate}%x.x.x.
+		\end{enumerate}%x.x.
+		\item Návrh uživatelského prostředí 
+		\begin{enumerate}[label*=\arabic*.]
+			\item Menu
+			\begin{itemize}
+				\item \hyperlink{5.1.3.3}{Obce} 
+				\begin{itemize}
+					\item \hyperlink{5.1.7.2}{Rubriky}
+					\begin{itemize}
+						\item \hyperlink{zobraz}{Detail dokumentu}
+					\end{itemize}
+					\item Alba
+					\begin{itemize}
+						\item v každém albu se vylistují fotografie daného alba\\
+						viz \hyperlink{fotky}{funkce}
+					\end{itemize}
+					\item \hyperlink{5.1.1.1}{Registrace}
+					\item \hyperlink{5.1.1.6}{Přihlášení}
+					\item Kontakt - Statická tabulka					
+				\end{itemize}
+			\end{itemize}
+		\newpage
+			\item Formuláře
+			\begin{enumerate}[label*=\arabic*.]
+				\item Registrace\\
+					\includegraphics[width=0.8\textwidth]{dais/register}\\
+					Tlačítko Registrovat se spouští funkci \hyperlink{5.1.1.1}{Registrace}\\
+				\item Přihlášení \\
+					\includegraphics[width=0.8\textwidth]{dais/login}\\
+					Tlačítko Přihlásit se spouští funkci \hyperlink{5.1.1.6}{Přihlášení}
+			\end{enumerate}
+		\end{enumerate}%x.x.
+	\end{enumerate}%x.  [label*=\arabic*.]
+\end{document}
