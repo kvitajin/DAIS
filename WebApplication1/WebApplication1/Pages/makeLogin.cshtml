@@ -1,0 +1,34 @@
+@page
+@using WebApplication1.App_Data
+@using WebApplication1.App_Data.proxy_shet
+@model WebApplication1.Pages.makeLogin
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>If you see this, you have slow Internet</title>
+</head>
+<body>
+<div>
+    @{
+        Uzivatel tmp = new Uzivatel();
+        var email = Request.Form["email"];
+        var heslo = Request.Form["heslo"];
+        tmp = UzivatelTableProxy.Select(tmp);
+        if (tmp.Nick == null)
+        {
+            Response.Redirect("/Login");
+        }
+        else
+        {
+            Session["uzivatel"] = tmp;
+        }
+    }
+</div>
+</body>
+</html>

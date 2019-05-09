@@ -1,0 +1,41 @@
+@page
+@using WebApplication1.App_Data.proxy_shet
+@model WebApplication1.Pages.register
+
+@{
+//    Layout = ;
+}
+
+<!DOCTYPE html>
+
+<html>    
+<head>
+    <title>Registrace</title>
+</head>
+<body>
+<h2 align="center">Registrace</h2>
+<div class="list-group-item" align="center">
+    <form asp-page="/makeRegister" method="post">
+        <label><b>Jméno</b></label><br/>
+        <input type="text" placeholder="Jméno" name="jmeno" required/><br/>
+        <label><b>Heslo</b></label><br/>
+        <input type="password" placeholder="Heslo" name="heslo" required><br/>
+        <label><b>Heslo znova</b></label><br/>
+        <input type="password" placeholder="Heslo znova" name="hesloZnova" required/><br/>
+        <label><b>Email</b></label><br/>
+        <input type="email" placeholder="Email" name="email" required/><br/>
+        <label><b>Datum narození</b></label> <br/>
+        <input type="date" name="datumNarozeni" required/><br/>
+        <label><b>Obec</b><br/>
+            <select name="obecId">
+                @foreach (var i in ObecTableProxy.Select())
+                {
+                    <option value=@i.ObecId>@i.Nazev</option>
+                }
+            </select>
+        </label><br/>
+        <input type="submit" value="Registruj"/>
+    </form>
+</div>
+</body>
+</html>

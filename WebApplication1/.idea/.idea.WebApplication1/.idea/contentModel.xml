@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_WebApplication1.171829072.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="WebApplication1" t="IncludeRecursive">
+        <e p="App_Data" t="Include">
+          <e p="Album.cs" t="Include" />
+          <e p="Dokument.cs" t="Include" />
+          <e p="Fotografie.cs" t="Include" />
+          <e p="Komentar.cs" t="Include" />
+          <e p="Obec.cs" t="Include" />
+          <e p="ObecClanek.cs" t="Include" />
+          <e p="Rubrika.cs" t="Include" />
+          <e p="Uzivatel.cs" t="Include" />
+          <e p="VerejneOznameni.cs" t="Include" />
+          <e p="db_shets" t="Include">
+            <e p="AlbumTable.cs" t="Include" />
+            <e p="Database.cs" t="Include" />
+            <e p="DokumentTable.cs" t="Include" />
+            <e p="FotografieTable.cs" t="Include" />
+            <e p="KomentarTable.cs" t="Include" />
+            <e p="ObecTable.cs" t="Include" />
+            <e p="RubrikaTable.cs" t="Include" />
+            <e p="UzivatelTable.cs" t="Include" />
+            <e p="VerejneOznameniTable.cs" t="Include" />
+          </e>
+          <e p="proxy_shet" t="Include">
+            <e p="AlbumTableProxy.cs" t="Include" />
+            <e p="DokumentTableProxy.cs" t="Include" />
+            <e p="FotografieTableProxy.cs" t="Include" />
+            <e p="KomentarTableProxy.cs" t="Include" />
+            <e p="ObecTableProxy.cs" t="Include" />
+            <e p="RubrikaTableProxy.cs" t="Include" />
+            <e p="UzivatelTableProxy.cs" t="Include" />
+            <e p="VerejneOznameniProxy.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="About.cshtml" t="Include" />
+          <e p="About.cshtml.cs" t="Include" />
+          <e p="Contact.cshtml" t="Include" />
+          <e p="Contact.cshtml.cs" t="Include" />
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+          <e p="Index.cshtml" t="Include" />
+          <e p="Index.cshtml.cs" t="Include" />
+          <e p="Login.cshtml" t="Include" />
+          <e p="Login.cshtml.cs" t="Include" />
+          <e p="Privacy.cshtml" t="Include" />
+          <e p="Privacy.cshtml.cs" t="Include" />
+          <e p="Shared" t="Include">
+            <e p="_CookieConsentPartial.cshtml" t="Include" />
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+          </e>
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="makeLogin.cshtml" t="Include" />
+          <e p="makeLogin.cshtml.cs" t="Include" />
+          <e p="makeRegister.cshtml" t="Include" />
+          <e p="makeRegister.cshtml.cs" t="Include" />
+          <e p="register.cshtml" t="Include" />
+          <e p="register.cshtml.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="WebApplication1.csproj" t="IncludeRecursive" />
+        <e p="app.config" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="WebApplication1.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="wwwroot" t="Include">
+          <e p="css" t="Include">
+            <e p="site.css" t="Include" />
+            <e p="site.min.css" t="Include" />
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="images" t="Include">
+            <e p="banner1.svg" t="Include" />
+            <e p="banner2.svg" t="Include" />
+            <e p="banner3.svg" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="site.js" t="Include" />
+            <e p="site.min.js" t="Include" />
+          </e>
+          <e p="lib" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE" t="Include" />
+              <e p="dist" t="Include">
+                <e p="css" t="Include">
+                  <e p="bootstrap-theme.css" t="Include" />
+                  <e p="bootstrap-theme.css.map" t="Include" />
+                  <e p="bootstrap-theme.min.css" t="Include" />
+                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap.css" t="Include" />
+                  <e p="bootstrap.css.map" t="Include" />
+                  <e p="bootstrap.min.css" t="Include" />
+                  <e p="bootstrap.min.css.map" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="glyphicons-halflings-regular.eot" t="Include" />
+                  <e p="glyphicons-halflings-regular.svg" t="Include" />
+                  <e p="glyphicons-halflings-regular.ttf" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff" t="Include" />
+                  <e p="glyphicons-halflings-regular.woff2" t="Include" />
+                </e>
+                <e p="js" t="Include">
+                  <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.min.js" t="Include" />
+                  <e p="npm.js" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="jquery" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+              <e p="dist" t="Include">
+                <e p="jquery.js" t="Include" />
+                <e p="jquery.min.js" t="Include" />
+                <e p="jquery.min.map" t="Include" />
+              </e>
+            </e>
+            <e p="jquery-validation" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE.md" t="Include" />
+              <e p="dist" t="Include">
+                <e p="additional-methods.js" t="Include" />
+                <e p="additional-methods.min.js" t="Include" />
+                <e p="jquery.validate.js" t="Include" />
+                <e p="jquery.validate.min.js" t="Include" />
+              </e>
+            </e>
+            <e p="jquery-validation-unobtrusive" t="Include">
+              <e p=".bower.json" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
+              <e p="jquery.validate.unobtrusive.js" t="Include" />
+              <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="WebApplication1.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

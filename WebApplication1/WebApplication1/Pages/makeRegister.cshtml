@@ -1,0 +1,38 @@
+@page
+@using WebApplication1.App_Data
+@using WebApplication1.App_Data.proxy_shet
+@model WebApplication1.Pages.makeRegister
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    @{
+        Uzivatel tmp = new Uzivatel();
+        var jmeno = Request.Form["jmeno"];
+        var heslo = Request.Form["heslo"];
+        var hesloZnova = Request.Form["hesloZnova"];
+        var email = Request.Form["email"];
+        var datumNarozeni = Convert.ToDateTime(Request.Form["datumNarozeni"]);
+        var obecId = Convert.ToInt32(Request.Form["obecId"]);
+        tmp.Nick = jmeno;
+        tmp.Heslo = heslo;
+        tmp.Email = email;
+        tmp.DatumNarozeni = datumNarozeni;
+        tmp.ObecId = obecId;
+//        Console.WriteLine("shit"+tmp.Nick+ " " +tmp.Email+" " +tmp.Heslo+" " +tmp.ObecId+" " +tmp.DatumNarozeni);
+        UzivatelTableProxy.Insert(tmp);
+        Response.Redirect("/Index");
+    }
+    
+</div>
+</body>
+</html>
