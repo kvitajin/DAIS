@@ -2,8 +2,7 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "/home/kvitajin/.dotnet/store/|arch|/|tfm|",
-      "/home/kvitajin/.nuget/packages",
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "/home/kvitajin/.nuget/packages"
     ]
   }
 }

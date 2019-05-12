@@ -19,6 +19,8 @@
         Uzivatel tmp = new Uzivatel();
         var email = Request.Form["email"];
         var heslo = Request.Form["heslo"];
+        tmp.Email = email;
+        tmp.Heslo = heslo;
         tmp = UzivatelTableProxy.Select(tmp);
         if (tmp.Nick == null)
         {
@@ -26,7 +28,13 @@
         }
         else
         {
-            Session["uzivatel"] = tmp;
+           Response.Cookies.Append("nick", tmp.Nick);
+           Response.Cookies.Append("obec", tmp.ObecId.ToString());
+           Response.Cookies.Append("uzivatelId", tmp.UzivatelId.ToString());
+           Response.Cookies.Append("ban", tmp.Ban.ToString());
+            var nick = Request.Cookies["nick"];
+           Response.Redirect("/Index");
+
         }
     }
 </div>

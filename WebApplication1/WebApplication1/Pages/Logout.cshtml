@@ -1,0 +1,25 @@
+@page
+@model WebApplication1.Pages.Logout
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div>
+    @{
+        Response.Cookies.Append("nick", "");
+        Response.Cookies.Append("obec", "");
+        Response.Cookies.Append("uzivatelId", "");
+        Response.Cookies.Append("ban", "");
+        Response.Redirect("/Index");
+    }
+</div>
+</body>
+</html>

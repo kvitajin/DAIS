@@ -5,7 +5,7 @@ using WebApplication1.App_Data.proxy_shet;
 
 namespace WebApplication1.App_Data.db_shets {
     public class UzivatelTable:UzivatelTableProxy {
-        public static string SELECT = "SELECT uzivatel_id, nick, heslo, email, datum_narozeni, ban, obec_obec_id FROM SEM_UZIVATEL WHERE UZIVATEL_ID = :uzivatelId";
+        public static string SELECT = "SELECT uzivatel_id, nick, heslo, email, datum_narozeni, ban, obec_obec_id FROM SEM_UZIVATEL WHERE EMAIL = :email";
         public static string SELECT_ALL = "SELECT uzivatel_id, nick, heslo, email, datum_narozeni, ban, obec_obec_id FROM SEM_UZIVATEL";
         public static string SELECT_OBEC = "SELECT uzivatel_id, nick, heslo, email, datum_narozeni, ban, obec_obec_id FROM SEM_UZIVATEL WHERE OBEC_OBEC_ID=:obecId";
         public static string INSERT = @"INSERT INTO SEM_UZIVATEL(uzivatel_id, nick, heslo, email, datum_narozeni, ban, obec_obec_id) 
@@ -28,7 +28,7 @@ namespace WebApplication1.App_Data.db_shets {
                     cmd.Parameters.Add("mail", uzivatel.Email);
                     OracleDataReader reader = cmd.ExecuteReader();
                     reader.Read();
-                    Console.WriteLine(reader.GetValue(0));
+                    //Console.WriteLine(reader.GetValue(0));
                     decimal pocet = (decimal)reader.GetValue(0);
                     if (pocet!=0) {
                         return;
@@ -77,12 +77,16 @@ namespace WebApplication1.App_Data.db_shets {
             Database db = new Database();
             db.Connect();
             OracleCommand cmd = db.CreateCommand(SELECT);
-            cmd.Parameters.Add("uzivatelId", uzivatel.UzivatelId);
+            cmd.Parameters.Add("email", uzivatel.Email);
             
             OracleDataReader readshit = db.Select(cmd);
             readshit.Read();
+
+            if (readshit.IsDBNull(2)) {
+                return null;
+            }
             Uzivatel tmp = new Uzivatel();
-            tmp.Heslo = readshit.GetString(2);
+            tmp.Heslo = (string) readshit.GetValue(2);
             if (BCrypt.Net.BCrypt.Verify(uzivatel.Heslo, tmp.Heslo)) {
                 tmp.UzivatelId = readshit.GetInt32(0);
                 tmp.Nick = readshit.GetString(1);
@@ -96,7 +100,7 @@ namespace WebApplication1.App_Data.db_shets {
                 db.Close();
                 return null;
             }
-            
+
             readshit.Close();
             db.Close();
             return tmp;

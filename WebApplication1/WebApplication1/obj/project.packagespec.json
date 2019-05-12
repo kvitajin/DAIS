@@ -1,14 +1,11 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/kvitajin/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+    "projectUniqueName": "/home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/WebApplication1.csproj",
     "projectName": "WebApplication1",
-    "projectPath": "/home/kvitajin/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
-    "outputPath": "/home/kvitajin/RiderProjects/WebApplication1/WebApplication1/obj/",
+    "projectPath": "/home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/WebApplication1.csproj",
+    "outputPath": "/home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/",
     "projectStyle": "PackageReference",
-    "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-    ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
     ],
@@ -41,6 +38,10 @@
           "target": "Package",
           "version": "[2.1.2, )"
         },
+        "Microsoft.AspNetCore.Http": {
+          "target": "Package",
+          "version": "[2.2.2, )"
+        },
         "Microsoft.AspNetCore.HttpsPolicy": {
           "target": "Package",
           "version": "[2.1.1, )"
@@ -62,6 +63,10 @@
         "Oracle.ManagedDataAccess.Core": {
           "target": "Package",
           "version": "[2.18.6, )"
+        },
+        "System.Net.Requests": {
+          "target": "Package",
+          "version": "[4.3.0, )"
         }
       },
       "imports": [
