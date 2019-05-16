@@ -12,7 +12,7 @@ namespace WebApplication1.Pages
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            Message = "V případě jakéhokoliv (vážného) problému:";
         }
     }
 }

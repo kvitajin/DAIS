@@ -3,6 +3,8 @@
 
 @{
     //Layout = null;
+    ViewData["Title"] = "Přihlášení";
+
 }
 
 <!DOCTYPE html>
@@ -13,12 +15,12 @@
 </head>
 <body>
 <h2 align="center">Přihlášení</h2>
-<div class="list-group-item" align="center">
+<div class="form-group" align="center">
     <form asp-page="/makeLogin" method="post">
         <label><b>Email</b></label><br/>
         <input type="text" name="email" placeholder="Email" required/> <br/>
         <label><b>Heslo</b></label><br/>
-        <input type="password" name="heslo" placeholder="Heslo" required/><br/>
+        <input type="password" name="heslo" placeholder="Heslo" required/><br/><br/>
         <input type="submit" value="Přihlas"/>
     </form>
 

@@ -1,0 +1,58 @@
+@page
+@using WebApplication1.App_Data.proxy_shet
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model WebApplication1.Pages.Document
+
+@{
+    //Layout = null;
+    ViewData["Title"] = "Tvorba dokumentu";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Tvorba dokumentu</title>
+</head>
+<body>
+@{
+//      var ban = Html.Raw(HttpContextAccessor.HttpContext.Request.Cookies["ban"]);
+//    if(ban.ToString()=="125" && ban.ToString()=="255"){
+        <div class="list-group-item" align="center">
+            <form asp-page="/makeDocument" method="post">
+                <label><b>Nadpis</b></label><br/>
+                <input type="text" name="nadpis" style="width: 50vw"/><br/>
+
+                <label><b>Text</b></label><br/>
+                <textarea name="text" style="width: 50vw"></textarea><br/>
+
+                <label><b>Rubrika</b></label><br/>
+
+                <select name="rubrikaId">
+                    @foreach (var i in RubrikaTableProxy.Select()) {
+                        <option value=@i.RubrikaId>@i.Nazev</option>
+                    }
+                </select><br/>
+
+                <label><b>Obec</b></label><br/>
+                <select name="obecId">
+                    @foreach (var i in ObecTableProxy.Select()) {
+                        <option value=@i.ObecId>@i.Nazev</option>
+                    }
+                </select><br/><br/>
+                <input type="submit" value="Vytvoř"/>
+
+            </form>
+
+        </div>
+@*     } *@
+    @* else { *@
+    @*     <p> Nejste přihlášen jako administrátor</p> *@
+    @* } *@
+}
+
+
+</body>
+</html>

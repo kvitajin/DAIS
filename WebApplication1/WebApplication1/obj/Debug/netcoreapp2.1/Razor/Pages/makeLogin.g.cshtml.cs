@@ -68,7 +68,7 @@ using WebApplication1.App_Data.proxy_shet;
             WriteLiteral("\n<!DOCTYPE html>\n\n<html>\n");
             EndContext();
             BeginContext(170, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1748740db74749cd83efc73cc1e623c2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8107b22c3f64cccbcdc6e6cf55b2a19", async() => {
                 BeginContext(176, 60, true);
                 WriteLiteral("\n    <title>If you see this, you have slow Internet</title>\n");
                 EndContext();
@@ -88,7 +88,7 @@ using WebApplication1.App_Data.proxy_shet;
             WriteLiteral("\n");
             EndContext();
             BeginContext(244, 739, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29b40246dbf9431aa62a445905b0e1a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e5b76d490c1410bb6a04f258e3e13b6", async() => {
                 BeginContext(250, 7, true);
                 WriteLiteral("\n<div>\n");
                 EndContext();

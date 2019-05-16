@@ -4,6 +4,8 @@
 
 @{
 //    Layout = ;
+    ViewData["Title"] = "Registrace";
+
 }
 
 <!DOCTYPE html>
@@ -14,7 +16,7 @@
 </head>
 <body>
 <h2 align="center">Registrace</h2>
-<div class="list-group-item" align="center">
+<div class="form-group" align="center">
     <form asp-page="/makeRegister" method="post">
         <label><b>Jméno</b></label><br/>
         <input type="text" placeholder="Jméno" name="jmeno" required/><br/>
@@ -27,7 +29,7 @@
         <label><b>Datum narození</b></label> <br/>
         <input type="date" name="datumNarozeni" required/><br/>
         <label><b>Obec</b><br/>
-            <select name="obecId">
+            <select name="obecId" >
                 @foreach (var i in ObecTableProxy.Select())
                 {
                     <option value=@i.ObecId>@i.Nazev</option>

@@ -24,47 +24,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61272923-d991-4803-a05d-289818a81e68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApplication1/Pages/Logout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/UzivatelTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/UzivatelTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/About.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/About.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/About.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/makeLogin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/makeLogin.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/WebApplication1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/Pages/register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/Pages/register.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/bin/Debug/netcoreapp2.1/WebApplication1.runtimeconfig.dev.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/About.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/About.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Contact.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Contact.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Error.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Error.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Index.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Index.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Privacy.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Privacy.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Login.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Login.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Logout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Logout.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_CookieConsentPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_CookieConsentPartial.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_Layout.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_Layout.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_ValidationScriptsPartial.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Shared/_ValidationScriptsPartial.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/_ViewImports.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/_ViewImports.g.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/_ViewStart.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/_ViewStart.g.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/makeLogin.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/makeLogin.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/makeRegister.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/makeRegister.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/register.g.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/register.g.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/WebApplication1.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/WebApplication1.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/WebApplication1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/WebApplication1.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/WebApplication1.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/WebApplication1.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication1/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication1/wwwroot/favicon.ico" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,20 +95,34 @@
         <item name="KVI0029: schema" type="3abd1b6a:OraImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@dbsys.cs.vsb.cz" type="feb32156:DbDataSourceImpl" />
+        <item name="KVI0029: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="SEM_DOKUMENT: table" type="942f455b:OraImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@dbsys.cs.vsb.cz" type="feb32156:DbDataSourceImpl" />
+        <item name="KVI0029: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="SEM_OBEC_CLANEK: table" type="942f455b:OraImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48020434">
+    <splitter split-orientation="horizontal" split-proportion="0.5557692">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
                   <folding>
-                    <marker date="1557568355598" expanded="true" signature="42:67" ph="@..." />
+                    <marker date="1557694623097" expanded="true" signature="42:106" ph="@..." />
                   </folding>
                 </state>
               </provider>
@@ -121,142 +131,94 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+                <state relative-caret-position="840">
+                  <caret line="57" selection-start-line="57" selection-end-line="57" />
                   <folding>
-                    <marker date="1557683020988" expanded="false" signature="13:80" ph="..." />
-                    <marker date="1557683020988" expanded="true" signature="99:135" ph="@..." />
-                    <marker date="1557683020988" expanded="true" signature="1498:1601" ph="@..." />
-                    <marker date="1557683020988" expanded="true" signature="1541:1601" ph="{...}" />
-                    <marker date="1557683020988" expanded="true" signature="1736:2061" ph="@*...*@" />
-                    <marker date="1557683020988" expanded="true" signature="2078:7326" ph="@*...*@" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeLogin.cshtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-                  <folding>
-                    <marker date="1557658179563" expanded="true" signature="13:80" ph="..." />
-                    <marker date="1557658179563" expanded="true" signature="121:144" ph="@..." />
-                    <marker date="1557658179563" expanded="true" signature="261:968" ph="@..." />
-                    <marker date="1557658179563" expanded="true" signature="518:579" ph="{...}" />
-                    <marker date="1557658179563" expanded="true" signature="592:962" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/UzivatelTableProxy.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="26" selection-start-line="26" selection-end-line="26" />
-                  <folding>
-                    <marker date="1557568355597" expanded="true" signature="81:1477" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="128:1475" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="179:246" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="745:794" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="849:897" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="952:1000" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="1059:1114" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="1162:1209" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="1281:1328" ph="{...}" />
-                    <marker date="1557568355597" expanded="true" signature="1401:1460" ph="{...}" />
+                    <marker date="1557696654449" expanded="false" signature="13:80" ph="..." />
+                    <marker date="1557696654449" expanded="true" signature="99:135" ph="@..." />
+                    <marker date="1557696654449" expanded="true" signature="1498:1601" ph="@..." />
+                    <marker date="1557696654449" expanded="true" signature="1541:1601" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+                  <folding>
+                    <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1557689293432" expanded="true" signature="13:81" ph="..." />
+                    <marker date="1557689293432" expanded="true" signature="170:240" ph="@..." />
+                    <marker date="1557689293432" expanded="true" signature="324:1585" ph="@..." />
+                    <marker date="1557689293432" expanded="true" signature="327:468" ph="/* var ban = Html.Raw(HttpContextAccessor.HttpContext.Request.Cookies[&quot;ban&quot;]); ... */" />
+                    <marker date="1557689293432" expanded="true" signature="945:1084" ph="@..." />
+                    <marker date="1557689293432" expanded="true" signature="992:1084" ph="{...}" />
+                    <marker date="1557689293432" expanded="true" signature="1224:1357" ph="@..." />
+                    <marker date="1557689293432" expanded="true" signature="1268:1357" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+                  <folding>
+                    <marker date="1558009245132" expanded="true" signature="13:80" ph="..." />
+                    <marker date="1558009245132" expanded="true" signature="124:147" ph="@..." />
+                    <marker date="1558009245132" expanded="true" signature="268:654" ph="@..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Shared/_Layout.cshtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="245">
-                  <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+                <state relative-caret-position="305">
+                  <caret line="44" column="73" selection-start-line="44" selection-start-column="73" selection-end-line="44" selection-end-column="73" />
                   <folding>
-                    <marker date="1557684972912" expanded="true" signature="1748:2951" ph="@..." />
-                    <marker date="1557684972912" expanded="true" signature="1912:2076" ph="{...}" />
-                    <marker date="1557684972912" expanded="true" signature="2076:2933" ph="{...}" />
+                    <marker date="1557694191177" expanded="true" signature="7:75" ph="..." />
+                    <marker date="1557694191177" expanded="true" signature="1791:4054" ph="@..." />
+                    <marker date="1557694191177" expanded="true" signature="2085:2377" ph="@..." />
+                    <marker date="1557694191177" expanded="true" signature="2139:2377" ph="{...}" />
+                    <marker date="1557694191177" expanded="true" signature="2735:2899" ph="{...}" />
+                    <marker date="1557694191177" expanded="true" signature="2899:3973" ph="{...}" />
+                    <marker date="1557694191177" expanded="true" signature="3285:3604" ph="@..." />
+                    <marker date="1557694191177" expanded="true" signature="3348:3604" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Logout.cshtml">
+            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
                   <folding>
-                    <marker date="1557671258603" expanded="true" signature="43:66" ph="@..." />
-                    <marker date="1557671258603" expanded="true" signature="144:374" ph="@..." />
+                    <marker date="1557695628576" expanded="true" signature="24:91" ph="..." />
+                    <marker date="1557695628576" expanded="true" signature="127:198" ph="@..." />
+                    <marker date="1557695628576" expanded="true" signature="276:888" ph="@..." />
+                    <marker date="1557695628576" expanded="true" signature="527:611" ph="{...}" />
+                    <marker date="1557695628576" expanded="true" signature="656:882" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Logout.cshtml.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-                  <folding>
-                    <marker date="1557671037267" expanded="true" signature="76:176" ph="{...}" />
-                    <marker date="1557671037267" expanded="true" signature="114:174" ph="{...}" />
-                    <marker date="1557671037267" expanded="true" signature="144:168" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Shared/_CookieConsentPartial.cshtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-                  <folding>
-                    <marker date="1557568355598" expanded="true" signature="43:240" ph="@..." />
-                    <marker date="1557568355598" expanded="true" signature="242:1832" ph="@..." />
-                    <marker date="1557568355598" expanded="true" signature="258:1832" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Startup.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-                  <folding>
-                    <marker date="1557670829223" expanded="false" signature="6:363" ph="..." />
-                    <marker date="1557670829223" expanded="true" signature="390:1890" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="417:1888" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="476:539" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="762:1295" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="848:1112" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="1483:1882" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="1530:1607" ph="{...}" />
-                    <marker date="1557670829223" expanded="true" signature="1624:1734" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/register.cshtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" selection-start-line="5" selection-end-line="6" />
-                  <folding>
-                    <marker date="1557568355599" expanded="true" signature="88:109" ph="@..." />
-                    <marker date="1557568355599" expanded="true" signature="1012:1153" ph="@..." />
-                    <marker date="1557568355599" expanded="true" signature="1055:1153" ph="{...}" />
-                  </folding>
+            <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_DOKUMENT">
+              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                <state projectRestartId="3722f893-f65c-4bf0-a9f8-54983d2ed384">
+                  <filtering>
+                    <filter text="" />
+                  </filtering>
                 </state>
               </provider>
             </entry>
@@ -268,93 +230,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/register.cshtml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="28" selection-start-line="6" selection-end-line="7" />
                   <folding>
-                    <marker date="1557568355599" expanded="true" signature="88:109" ph="@..." />
-                    <marker date="1557568355599" expanded="true" signature="1012:1153" ph="@..." />
-                    <marker date="1557568355599" expanded="true" signature="1055:1153" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-                  <folding>
-                    <marker date="1557568355599" expanded="false" signature="13:80" ph="..." />
-                    <marker date="1557568355599" expanded="true" signature="124:147" ph="@..." />
-                    <marker date="1557568355599" expanded="true" signature="225:940" ph="@..." />
+                    <marker date="1557694566007" expanded="true" signature="88:148" ph="@..." />
+                    <marker date="1557694566007" expanded="true" signature="1047:1188" ph="@..." />
+                    <marker date="1557694566007" expanded="true" signature="1090:1188" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/UzivatelTable.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-                  <folding>
-                    <marker date="1557655963708" expanded="false" signature="6:129" ph="..." />
-                    <marker date="1557655963708" expanded="true" signature="175:7807" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="227:7805" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="1447:2900" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="1750:2888" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="2143:2198" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="2294:2341" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="2960:3409" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="3469:3744" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="3808:4901" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="4145:4189" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="4357:4688" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="4688:4812" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="4954:5790" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="5236:5698" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="5858:6745" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="6191:6653" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="6823:7799" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="6902:6946" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="7004:7048" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="7114:7157" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="7213:7255" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="7321:7363" ph="{...}" />
-                    <marker date="1557655963708" expanded="true" signature="7363:7481" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
                   <folding>
-                    <marker date="1557568355596" expanded="true" signature="6:216" ph="..." />
-                    <marker date="1557568355596" expanded="true" signature="262:4800" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="314:4798" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="1236:1811" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="1866:2384" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="2439:2707" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="2766:3814" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="3120:3579" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="3665:3713" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="3884:4792" ph="{...}" />
-                    <marker date="1557568355596" expanded="true" signature="4241:4700" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="6:216" ph="..." />
+                    <marker date="1557695446297" expanded="true" signature="262:4821" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="314:4819" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="1257:1832" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="1887:2405" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="2460:2728" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="2787:3835" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="3141:3600" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="3686:3734" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="3905:4813" ph="{...}" />
+                    <marker date="1557695446297" expanded="true" signature="4262:4721" ph="{...}" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_UZIVATEL">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
-                  <filtering />
                 </state>
               </provider>
             </entry>
@@ -367,8 +271,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -418,15 +327,12 @@
     <setting file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/VerejneOznameniProxy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/UzivatelTableProxy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/RubrikaTableProxy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebApplication1/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/WebApplication1/Program.cs" />
-        <option value="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml" />
-        <option value="$PROJECT_DIR$/WebApplication1/Pages/register.cshtml.cs" />
-        <option value="$PROJECT_DIR$/WebApplication1/App_Data/Program.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/VerejneOznameni.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/Uzivatel.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/Rubrika.cs" />
@@ -434,7 +340,6 @@
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/Obec.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/Komentar.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/Fotografie.cs" />
-        <option value="$PROJECT_DIR$/WebApplication1/App_Data/Dokument.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/Album.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/VerejneOznameniProxy.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/KomentarTableProxy.cs" />
@@ -443,7 +348,6 @@
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/AlbumTableProxy.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/Database.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/RubrikaTableProxy.cs" />
-        <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/AlbumTable.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/FotografieTable.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/KomentarTable.cs" />
@@ -455,8 +359,6 @@
         <option value="$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml.cs" />
-        <option value="$PROJECT_DIR$/WebApplication1/Pages/register.cshtml" />
-        <option value="$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml" />
         <option value="$PROJECT_DIR$/WebApplication1/Pages/makeLogin.cshtml.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/UzivatelTableProxy.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/UzivatelTable.cs" />
@@ -465,8 +367,23 @@
         <option value="$PROJECT_DIR$/WebApplication1/Startup.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/Pages/Logout.cshtml.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/Pages/Logout.cshtml" />
-        <option value="$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/About.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/About.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/App_Data/Dokument.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml.cs" />
         <option value="$PROJECT_DIR$/WebApplication1/Pages/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/register.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml" />
+        <option value="$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml" />
       </list>
     </option>
   </component>
@@ -489,8 +406,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -513,21 +430,7 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="WebApplication1" type="24d0babc:SolutionExplorerModelNode" />
               <item name="WebApplication1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Pages" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Shared" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebApplication1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="WebApplication1" type="24d0babc:SolutionExplorerModelNode" />
               <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="WebApplication1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="WebApplication1" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="wwwroot" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="images" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -541,7 +444,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Projekt" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -614,12 +517,14 @@
       <workItem from="1557655782517" duration="3070000" />
       <workItem from="1557666021862" duration="2050000" />
       <workItem from="1557669050864" duration="3055000" />
-      <workItem from="1557682071240" duration="3025000" />
+      <workItem from="1557682071240" duration="12813000" />
+      <workItem from="1557695603736" duration="1286000" />
+      <workItem from="1558005783997" duration="1025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52722000" />
+    <option name="totallyTimeSpent" value="64821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,20 +539,20 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16435432" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16755603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="NuGet" order="7" weight="0.32969433" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" weight="0.32969433" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32969433" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="REST Client" order="13" />
@@ -655,7 +560,7 @@
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="16" weight="0.32969433" />
       <window_info anchor="bottom" id="TeamCity" order="17" />
-      <window_info anchor="bottom" id="Database Console" order="18" visible="true" weight="0.32969433" />
+      <window_info anchor="bottom" id="Database Console" order="18" weight="0.32969433" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -680,272 +585,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/VerejneOznameni.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557318890404" expanded="true" signature="50:247" ph="{...}" />
-            <marker date="1557318890404" expanded="true" signature="85:245" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Uzivatel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557318908526" expanded="true" signature="50:385" ph="{...}" />
-            <marker date="1557318908526" expanded="true" signature="78:383" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Rubrika.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-          <folding>
-            <marker date="1557318914926" expanded="true" signature="35:156" ph="{...}" />
-            <marker date="1557318914926" expanded="true" signature="62:154" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/ObecClanek.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-          <folding>
-            <marker date="1557318919472" expanded="true" signature="35:160" ph="{...}" />
-            <marker date="1557318919472" expanded="true" signature="65:158" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Obec.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-          <folding>
-            <marker date="1557318923114" expanded="true" signature="35:191" ph="{...}" />
-            <marker date="1557318923114" expanded="true" signature="59:189" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Komentar.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-          <folding>
-            <marker date="1557318927498" expanded="true" signature="35:288" ph="{...}" />
-            <marker date="1557318927498" expanded="true" signature="63:286" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Fotografie.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557318931213" expanded="true" signature="50:339" ph="{...}" />
-            <marker date="1557318931213" expanded="true" signature="80:337" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Dokument.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557319296971" expanded="true" signature="50:344" ph="{...}" />
-            <marker date="1557319296971" expanded="true" signature="78:342" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/VerejneOznameniProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-          <folding>
-            <marker date="1557319238541" expanded="true" signature="81:1193" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="130:1191" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="183:256" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="677:719" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="774:816" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="871:913" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="985:1034" ph="{...}" />
-            <marker date="1557319238541" expanded="true" signature="1120:1185" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/KomentarTableProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557319235434" expanded="true" signature="81:1316" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="128:1314" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="179:245" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="690:738" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="792:840" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="894:942" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="1000:1055" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="1117:1175" ph="{...}" />
-            <marker date="1557319235434" expanded="true" signature="1245:1307" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/FotografieTableProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557319240513" expanded="true" signature="81:1165" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="130:1163" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="183:252" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="646:696" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="754:804" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="862:912" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="976:1033" ph="{...}" />
-            <marker date="1557319240513" expanded="true" signature="1098:1156" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/DokumentTableProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <marker date="1557319242225" expanded="true" signature="6:125" ph="..." />
-            <marker date="1557319242225" expanded="true" signature="173:1141" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="220:1139" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="270:336" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="675:718" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="767:810" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="859:902" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="955:1005" ph="{...}" />
-            <marker date="1557319242225" expanded="true" signature="1069:1124" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/AlbumTableProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557319243697" expanded="true" signature="81:1009" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="125:1007" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="173:236" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="565:610" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="659:704" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="753:798" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="841:893" ph="{...}" />
-            <marker date="1557319243697" expanded="true" signature="948:1001" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Album.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding>
-            <marker date="1557319347614" expanded="true" signature="50:248" ph="{...}" />
-            <marker date="1557319347614" expanded="true" signature="75:246" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/RubrikaTableProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-          <folding>
-            <marker date="1557319236442" expanded="true" signature="81:1028" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="127:1026" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="177:242" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="577:624" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="677:724" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="777:824" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="873:927" ph="{...}" />
-            <marker date="1557319236442" expanded="true" signature="974:1021" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/Database.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding>
-            <marker date="1557320460160" expanded="false" signature="6:52" ph="..." />
-            <marker date="1557320460160" expanded="true" signature="98:1884" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="126:1882" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="211:269" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="315:542" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="393:509" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="572:933" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="961:1010" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="1067:1389" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="1121:1201" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="1232:1282" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="1301:1351" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="1450:1582" ph="{...}" />
-            <marker date="1557320460160" expanded="true" signature="1590:1671" ph="/// Select encapulated in the command. ... " />
-            <marker date="1557320460160" expanded="true" signature="1732:1876" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/AlbumTable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <marker date="1557324246942" expanded="true" signature="6:160" ph="..." />
-            <marker date="1557324246942" expanded="true" signature="206:3811" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="252:3809" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="955:1275" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="1329:1785" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="1839:2097" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="2152:3017" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="2495:2790" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="2873:2921" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="3077:3803" ph="{...}" />
-            <marker date="1557324246942" expanded="true" signature="3417:3712" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/VerejneOznameniTable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <marker date="1557324246818" expanded="true" signature="6:115" ph="..." />
-            <marker date="1557324246818" expanded="true" signature="222:4455" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="1777:2167" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="2236:2620" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="2681:2930" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="3008:3646" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="3301:3561" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="3756:4449" ph="{...}" />
-            <marker date="1557324246818" expanded="true" signature="4104:4364" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cs" />
     <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1022,17 +661,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Shared/_ValidationScriptsPartial.cshtml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <marker date="1557246527395" expanded="true" signature="26:65" ph="@..." />
-            <marker date="1557246527395" expanded="true" signature="202:333" ph="@*...*@" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Error.cshtml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1137,16 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <marker date="1557568355598" expanded="true" signature="42:67" ph="@..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Logout.cshtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1200,46 +818,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/register.cshtml">
+    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/UzivatelTableProxy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="5" selection-end-line="6" />
+        <state relative-caret-position="150">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <marker date="1557568355599" expanded="true" signature="88:109" ph="@..." />
-            <marker date="1557568355599" expanded="true" signature="1012:1153" ph="@..." />
-            <marker date="1557568355599" expanded="true" signature="1055:1153" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="81:1477" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="128:1475" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="179:246" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="745:794" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="849:897" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="952:1000" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="1059:1114" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="1162:1209" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="1281:1328" ph="{...}" />
+            <marker date="1557568355597" expanded="true" signature="1401:1460" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml">
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeLogin.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="330">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
-            <marker date="1557568355599" expanded="false" signature="13:80" ph="..." />
-            <marker date="1557568355599" expanded="true" signature="124:147" ph="@..." />
-            <marker date="1557568355599" expanded="true" signature="225:940" ph="@..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <marker date="1557568355596" expanded="true" signature="6:216" ph="..." />
-            <marker date="1557568355596" expanded="true" signature="262:4800" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="314:4798" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="1236:1811" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="1866:2384" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="2439:2707" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="2766:3814" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="3120:3579" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="3665:3713" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="3884:4792" ph="{...}" />
-            <marker date="1557568355596" expanded="true" signature="4241:4700" ph="{...}" />
+            <marker date="1557658179563" expanded="true" signature="13:80" ph="..." />
+            <marker date="1557658179563" expanded="true" signature="121:144" ph="@..." />
+            <marker date="1557658179563" expanded="true" signature="261:968" ph="@..." />
+            <marker date="1557658179563" expanded="true" signature="518:579" ph="{...}" />
+            <marker date="1557658179563" expanded="true" signature="592:962" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1247,13 +854,87 @@
     <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_UZIVATEL">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
-          <filtering />
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/About.cshtml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <marker date="1557688758365" expanded="false" signature="6:139" ph="..." />
+            <marker date="1557688758365" expanded="true" signature="172:362" ph="{...}" />
+            <marker date="1557688758365" expanded="true" signature="214:360" ph="{...}" />
+            <marker date="1557688758365" expanded="true" signature="293:354" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
+          <folding>
+            <marker date="1557688965727" expanded="true" signature="26:65" ph="@..." />
+            <marker date="1557688965727" expanded="true" signature="202:333" ph="@*...*@" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/Dokument.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <marker date="1557689877094" expanded="true" signature="50:344" ph="{...}" />
+            <marker date="1557689877094" expanded="true" signature="78:342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Contact.cshtml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+          <folding>
+            <marker date="1557688872236" expanded="false" signature="6:139" ph="..." />
+            <marker date="1557688872236" expanded="true" signature="172:390" ph="{...}" />
+            <marker date="1557688872236" expanded="true" signature="216:388" ph="{...}" />
+            <marker date="1557688872236" expanded="true" signature="295:382" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/About.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <marker date="1557688783523" expanded="true" signature="24:66" ph="@..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/UzivatelTable.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="-309">
           <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
           <folding>
             <marker date="1557655963708" expanded="false" signature="6:129" ph="..." />
@@ -1284,62 +965,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/proxy_shet/UzivatelTableProxy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <marker date="1557568355597" expanded="true" signature="81:1477" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="128:1475" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="179:246" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="745:794" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="849:897" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="952:1000" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="1059:1114" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="1162:1209" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="1281:1328" ph="{...}" />
-            <marker date="1557568355597" expanded="true" signature="1401:1460" ph="{...}" />
-          </folding>
+    <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_ZMENA_DOKUMENT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
+          <filtering>
+            <filter text="" />
+          </filtering>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeLogin.cshtml">
+    <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_VEREJNE_OZNAMENI">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_OBEC">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_RUBRIKA">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_OBEC_CLANEK">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="8a51f30c-01e0-401b-ae1b-b29fa185f0da">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/wwwroot/css/site.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/wwwroot/css/site.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Login.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
           <folding>
-            <marker date="1557658179563" expanded="true" signature="13:80" ph="..." />
-            <marker date="1557658179563" expanded="true" signature="121:144" ph="@..." />
-            <marker date="1557658179563" expanded="true" signature="261:968" ph="@..." />
-            <marker date="1557658179563" expanded="true" signature="518:579" ph="{...}" />
-            <marker date="1557658179563" expanded="true" signature="592:962" ph="{...}" />
+            <marker date="1557694623097" expanded="true" signature="42:106" ph="@..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Index.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="840">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
-            <marker date="1557683020988" expanded="false" signature="13:80" ph="..." />
-            <marker date="1557683020988" expanded="true" signature="99:135" ph="@..." />
-            <marker date="1557683020988" expanded="true" signature="1498:1601" ph="@..." />
-            <marker date="1557683020988" expanded="true" signature="1541:1601" ph="{...}" />
-            <marker date="1557683020988" expanded="true" signature="1736:2061" ph="@*...*@" />
-            <marker date="1557683020988" expanded="true" signature="2078:7326" ph="@*...*@" />
+            <marker date="1557696654449" expanded="false" signature="13:80" ph="..." />
+            <marker date="1557696654449" expanded="true" signature="99:135" ph="@..." />
+            <marker date="1557696654449" expanded="true" signature="1498:1601" ph="@..." />
+            <marker date="1557696654449" expanded="true" signature="1541:1601" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/Database.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1557568355596" expanded="false" signature="6:52" ph="..." />
+            <marker date="1557568355596" expanded="true" signature="98:1884" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="126:1882" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="211:269" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="315:542" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="393:509" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="572:933" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="961:1010" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="1067:1389" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="1121:1201" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="1232:1282" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="1301:1351" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="1450:1582" ph="{...}" />
+            <marker date="1557568355596" expanded="true" signature="1590:1671" ph="/// Select encapulated in the command. ... " />
+            <marker date="1557568355596" expanded="true" signature="1732:1876" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeRegister.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <marker date="1557568355599" expanded="false" signature="13:80" ph="..." />
+            <marker date="1557568355599" expanded="true" signature="124:147" ph="@..." />
+            <marker date="1557568355599" expanded="true" signature="225:940" ph="@..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Shared/_Layout.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="44" column="25" lean-forward="true" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        <state relative-caret-position="305">
+          <caret line="44" column="73" selection-start-line="44" selection-start-column="73" selection-end-line="44" selection-end-column="73" />
           <folding>
-            <marker date="1557684972912" expanded="true" signature="1748:2951" ph="@..." />
-            <marker date="1557684972912" expanded="true" signature="1912:2076" ph="{...}" />
-            <marker date="1557684972912" expanded="true" signature="2076:2933" ph="{...}" />
+            <marker date="1557694191177" expanded="true" signature="7:75" ph="..." />
+            <marker date="1557694191177" expanded="true" signature="1791:4054" ph="@..." />
+            <marker date="1557694191177" expanded="true" signature="2085:2377" ph="@..." />
+            <marker date="1557694191177" expanded="true" signature="2139:2377" ph="{...}" />
+            <marker date="1557694191177" expanded="true" signature="2735:2899" ph="{...}" />
+            <marker date="1557694191177" expanded="true" signature="2899:3973" ph="{...}" />
+            <marker date="1557694191177" expanded="true" signature="3285:3604" ph="@..." />
+            <marker date="1557694191177" expanded="true" signature="3348:3604" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://57967849-9644-4629-a14d-17c2d3daea9c/schema/KVI0029/table/SEM_DOKUMENT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="3722f893-f65c-4bf0-a9f8-54983d2ed384">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/register.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" selection-start-line="6" selection-end-line="7" />
+          <folding>
+            <marker date="1557694566007" expanded="true" signature="88:148" ph="@..." />
+            <marker date="1557694566007" expanded="true" signature="1047:1188" ph="@..." />
+            <marker date="1557694566007" expanded="true" signature="1090:1188" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/App_Data/db_shets/DokumentTable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <marker date="1557695446297" expanded="true" signature="6:216" ph="..." />
+            <marker date="1557695446297" expanded="true" signature="262:4821" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="314:4819" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="1257:1832" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="1887:2405" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="2460:2728" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="2787:3835" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="3141:3600" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="3686:3734" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="3905:4813" ph="{...}" />
+            <marker date="1557695446297" expanded="true" signature="4262:4721" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <marker date="1557692716260" expanded="true" signature="76:228" ph="{...}" />
+            <marker date="1557692716260" expanded="true" signature="112:226" ph="{...}" />
+            <marker date="1557692716260" expanded="true" signature="148:184" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Show.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <marker date="1557695628576" expanded="true" signature="24:91" ph="..." />
+            <marker date="1557695628576" expanded="true" signature="127:198" ph="@..." />
+            <marker date="1557695628576" expanded="true" signature="276:888" ph="@..." />
+            <marker date="1557695628576" expanded="true" signature="527:611" ph="{...}" />
+            <marker date="1557695628576" expanded="true" signature="656:882" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/makeDocument.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <marker date="1558009245132" expanded="true" signature="13:80" ph="..." />
+            <marker date="1558009245132" expanded="true" signature="124:147" ph="@..." />
+            <marker date="1558009245132" expanded="true" signature="268:654" ph="@..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebApplication1/Pages/Document.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1557689293432" expanded="true" signature="13:81" ph="..." />
+            <marker date="1557689293432" expanded="true" signature="170:240" ph="@..." />
+            <marker date="1557689293432" expanded="true" signature="324:1585" ph="@..." />
+            <marker date="1557689293432" expanded="true" signature="327:468" ph="/* var ban = Html.Raw(HttpContextAccessor.HttpContext.Request.Cookies[&quot;ban&quot;]); ... */" />
+            <marker date="1557689293432" expanded="true" signature="945:1084" ph="@..." />
+            <marker date="1557689293432" expanded="true" signature="992:1084" ph="{...}" />
+            <marker date="1557689293432" expanded="true" signature="1224:1357" ph="@..." />
+            <marker date="1557689293432" expanded="true" signature="1268:1357" ph="{...}" />
           </folding>
         </state>
       </provider>

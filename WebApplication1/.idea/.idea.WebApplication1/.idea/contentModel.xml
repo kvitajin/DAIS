@@ -45,6 +45,8 @@
           <e p="About.cshtml.cs" t="Include" />
           <e p="Contact.cshtml" t="Include" />
           <e p="Contact.cshtml.cs" t="Include" />
+          <e p="Document.cshtml" t="Include" />
+          <e p="Document.cshtml.cs" t="Include" />
           <e p="Error.cshtml" t="Include" />
           <e p="Error.cshtml.cs" t="Include" />
           <e p="Index.cshtml" t="Include" />
@@ -60,8 +62,12 @@
             <e p="_Layout.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
           </e>
+          <e p="Show.cshtml" t="Include" />
+          <e p="Show.cshtml.cs" t="Include" />
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
+          <e p="makeDocument.cshtml" t="Include" />
+          <e p="makeDocument.cshtml.cs" t="Include" />
           <e p="makeLogin.cshtml" t="Include" />
           <e p="makeLogin.cshtml.cs" t="Include" />
           <e p="makeRegister.cshtml" t="Include" />

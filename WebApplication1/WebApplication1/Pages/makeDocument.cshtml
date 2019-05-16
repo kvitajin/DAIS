@@ -1,0 +1,34 @@
+@page
+@using WebApplication1.App_Data
+@using WebApplication1.App_Data.proxy_shet
+@model WebApplication1.Pages.makeDocument
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Pokud toto vidíš, máš krutě pomalý internet</title>
+</head>
+<body>
+<div>
+    @{
+        Dokument tmp= new Dokument();
+        tmp.Nadpis = Request.Form["nadpis"];
+        tmp.RubrikaId = Convert.ToInt32(Request.Form["rubrikaId"]);
+        var obsah = Request.Form["text"];
+        var obecId = Request.Form["obecId"];
+        tmp.Obrazek = "";
+        tmp.Obsah = obsah;
+        DokumentTableProxy.Insert(tmp);
+        Response.Redirect("/Index");
+
+        
+    }
+
+</div>
+</body>
+</html>

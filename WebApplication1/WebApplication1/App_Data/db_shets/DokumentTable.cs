@@ -9,7 +9,7 @@ using WebApplication1.App_Data.proxy_shet;
 namespace WebApplication1.App_Data.db_shets {
     public class DokumentTable:DokumentTableProxy {
         public static string SELECT = "SELECT dokument_id, nadpis, obsah, datum, obrazek, rubrika_rubrika_id FROM SEM_DOKUMENT where DOKUMENT_ID = :dokumentId";
-        public static string SELECT_RUBR = "SELECT dokument_id, nadpis, obsah, datum, obrazek, rubrika_rubrika_id FROM SEM_DOKUMENT where RUBRIKA_RUBRIKA_ID = :rubrikaId";
+        public static string SELECT_RUBR = "SELECT dokument_id, nadpis, obsah, datum, obrazek, rubrika_rubrika_id FROM SEM_DOKUMENT where RUBRIKA_RUBRIKA_ID = :rubrikaId order by DATUM desc ";
         public static string INSERT =
             @"INSERT INTO SEM_DOKUMENT(dokument_id, nadpis, obsah, datum, obrazek, rubrika_rubrika_id) 
             VALUES (SEQ_DOKUMENT.nextval, :nadpis, :obsah, :datum, :obrazek, :rubrikaId)";

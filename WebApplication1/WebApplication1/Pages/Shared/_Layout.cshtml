@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Http
+@using WebApplication1.App_Data.proxy_shet
 @inject IHttpContextAccessor HttpContextAccessor
 <!DOCTYPE html>
 <html>
@@ -36,22 +37,42 @@
                 <li><a asp-page="/About">O projektu</a></li>
                 <li><a asp-page="/Contact">Kontakt</a></li>
                 @{
+                    <li class="dropdow">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"aria-expanded="False">Dokumenty<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            @foreach (var  rubrika in RubrikaTableProxy.Select()) {
+                                <li role="presentation">
+                                    <a asp-page="/Show/@rubrika.RubrikaId" class="glyphicon">@rubrika.Nazev</a>
+                                </li>
+                            }
+
+                        </ul>
+                    </li>
+                    
+
+                    
                     var name = Html.Raw(HttpContextAccessor.HttpContext.Request.Cookies["nick"]);
+                    var ban = Html.Raw(HttpContextAccessor.HttpContext.Request.Cookies["ban"]);
                     if (name == null || name.ToString() == "") {
                         <li><a asp-page="/register">Registrace</a></li>
                         <li><a asp-page="/login">Přihlásit</a></li>
                      }
-                     else {
-                         
-                        
-                        <li class="dropdow">
+                    else {
+                    
+
+                    <li class="dropdow">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"aria-expanded="False">@name<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li role="presentation">
-                                    <a asp-page="/User" class="glyphicon" >Sprva</a>
-                                </li>
-                                <li role="presentation">
-                                <a asp-page="/Logout" class="glyphicon">Odhlásit</a>
+                                
+                                    @if (@ban.ToString() == "127" || @ban.ToString()     == "255") {
+                                        <li role="presentation">
+                                            <a asp-page="/Document" class="glyphicon">Vytvoř dokument</a>
+                                        </li>
+                                    }
+                                
+
+                                    <li role="presentation">
+                                    <a asp-page="/Logout" class="glyphicon">Odhlásit</a>
                                 </li>
 
 
@@ -60,6 +81,9 @@
                             
                         </li>
                      }
+                    
+                    
+                    
                 }
                 
             </ul>    

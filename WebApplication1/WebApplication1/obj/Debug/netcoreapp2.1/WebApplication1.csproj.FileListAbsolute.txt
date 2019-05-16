@@ -71,3 +71,6 @@
 /home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.pdb
 /home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/Debug/netcoreapp2.1/WebApplication1.csproj.CopyComplete
 /home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Logout.g.cshtml.cs
+/home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Document.g.cshtml.cs
+/home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/makeDocument.g.cshtml.cs
+/home/kvitajin/RiderProjects/vsb/DAIS/WebApplication1/WebApplication1/obj/Debug/netcoreapp2.1/Razor/Pages/Show.g.cshtml.cs
